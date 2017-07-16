@@ -171,11 +171,12 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        ostada\Providers\AppServiceProvider::class,
+        ostada\Providers\AuthServiceProvider::class,
+        // ostada\Providers\BroadcastServiceProvider::class,
+        ostada\Providers\EventServiceProvider::class,
+        ostada\Providers\RouteServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     ],
 

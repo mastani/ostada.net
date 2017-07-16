@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace ostada\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
