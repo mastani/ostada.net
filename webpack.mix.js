@@ -1,4 +1,4 @@
-const { mix } = require('laravel-mix');
+const {mix} = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +11,17 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.scripts([
+    'resources/assets/js/jquery.min.js',
+    'resources/assets/js/persianumber.js',
+    'resources/assets/js/typeahead.bundle.min.js',
+    'resources/assets/js/handlebars.min.js',
+    'resources/assets/js/jquery.barrating.min.js'
+], 'public/js/vendor.js')
+    .js('resources/assets/js/app.js', 'public/js')
+    .sass('resources/assets/sass/app.scss', 'public/css')
+    .combine([
+        'bower_resources/bootstrap-rtl/dist/css/bootstrap-rtl.min.css',
+        'bower_resources/font-awesome/css/font-awesome.min.css',
+        'resources/assets/css/typeahead.css',
+    ], 'public/css/vendor.css');
