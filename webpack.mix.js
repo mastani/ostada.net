@@ -24,4 +24,5 @@ mix.scripts([
         'bower_resources/bootstrap-rtl/dist/css/bootstrap-rtl.min.css',
         'bower_resources/font-awesome/css/font-awesome.min.css',
         'resources/assets/css/typeahead.css',
+        'resources/assets/css/main.css',
     ], 'public/css/vendor.css');
