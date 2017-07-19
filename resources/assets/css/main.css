@@ -22,6 +22,12 @@ html {
     text-align: center;
 }
 
+.container-rtl {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: right;
+}
+
 a {
     color: #03739c;
     text-decoration: none;
